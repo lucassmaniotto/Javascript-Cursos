@@ -5,3 +5,4 @@ Roteiro do curso ordenado por commits
   + Tipos primitivos;
   + Variáveis;
   + Truthy e Falsy;
+  + Conversões de tipos;
