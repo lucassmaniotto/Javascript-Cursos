@@ -6,3 +6,4 @@ Roteiro do curso ordenado por commits
   + Variáveis;
   + Truthy e Falsy;
   + Conversões de tipos;
+  + Console API;
