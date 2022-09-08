@@ -7,3 +7,4 @@ Roteiro do curso ordenado por commits
   + Truthy e Falsy;
   + Conversões de tipos;
   + Console API;
+  + Operadores
