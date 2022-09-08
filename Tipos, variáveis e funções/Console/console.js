@@ -8,7 +8,7 @@ console.log(variable)
 
 // tratamento de erro
 
-console.error("Oops!")
+console.error(new Error("Oops!"))
 console.warn("Watch out...")
 //console.clear()
 
