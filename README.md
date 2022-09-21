@@ -9,3 +9,4 @@ Roteiro do curso ordenado por commits
   + Console API;
   + Operadores;
   + Funções;
+  + Arrays e seus métodos;
