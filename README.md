@@ -12,3 +12,6 @@ Roteiro do curso ordenado por commits
 * Arrays
   + Arrays e seus métodos;
   + Laços;
+* Objetos
+  + Objetos e seus métodos;
+  + Introdução a OO;
