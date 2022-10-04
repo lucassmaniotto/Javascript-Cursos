@@ -15,6 +15,6 @@ Roteiro do curso ordenado por commits
 * Objetos
   + Objetos e seus métodos;
   + Introdução a OO;
-  + Alura+
+  + Alura+:
     + Desturcturing;
     + Classe vs Função;
