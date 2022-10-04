@@ -16,5 +16,5 @@ Roteiro do curso ordenado por commits
   + Objetos e seus métodos;
   + Introdução a OO;
   + Alura+
-  ++ Desturcturing;
-  ++ Classe vs Função;
+    + Desturcturing;
+    + Classe vs Função;
