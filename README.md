@@ -18,3 +18,7 @@ Roteiro do curso ordenado por commits
   + Alura+:
     + Desturcturing;
     + Classe vs Função;
+* Ordenação I
+  + Bubble Sort;
+  + Selection Sort;
+  + Insertion Sort;
