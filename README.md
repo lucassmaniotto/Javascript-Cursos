@@ -22,3 +22,7 @@ Roteiro do curso ordenado por commits
   + Bubble Sort;
   + Selection Sort;
   + Insertion Sort;
+* Ordenação II
+  + Merge Sort;
+  + Quick Sort;
+  + Binary Search;
