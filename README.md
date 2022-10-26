@@ -26,3 +26,8 @@ Roteiro do curso ordenado por commits
   + Merge Sort;
   + Quick Sort;
   + Binary Search;
+* Orientação a Objetos
+  + Objeto Literal;
+  + Função de Objeto;
+  + Prototype;
+  + Classes;
