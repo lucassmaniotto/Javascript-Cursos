@@ -1,6 +1,6 @@
-# Roteiro do Curso
-Roteiro do curso ordenado por commits
-
+# Este repositório armazena os cursos relacionados a Javascript feitos até então
+## Cursos
+### Javascript para Backend
 * Tipos, variáveis e funções
   + Tipos primitivos;
   + Variáveis;
@@ -31,3 +31,7 @@ Roteiro do curso ordenado por commits
   + Função de Objeto;
   + Prototype;
   + Classes;
+
+### Javascript para Frontend
+* Páginas dinâmicas
+    + Funções e Listas;
