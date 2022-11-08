@@ -1,4 +1,7 @@
-# Este repositório armazena os cursos relacionados a Javascript feitos até então
+# Cursos Javascript Backen e Frontend
+
+Os roteiros dos cursos e seus conteúdos estão listados conforme commits
+
 ## Cursos
 ### Javascript para Backend
 * Tipos, variáveis e funções
