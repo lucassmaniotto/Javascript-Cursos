@@ -17,14 +17,14 @@ for (let i = 0; i < keysList.length; i++) {
     key.onclick = function () {
         playSound(idAudio);
     }
-}
 
-tecla.onkeydown = function (event) {
-    if (event.code === 'Enter' || event.code === 'Space') {
-        tecla.classList.add('ativa');
+    tecla.onkeydown = function (event) {
+        if (event.code === 'Enter' || event.code === 'Space') {
+            tecla.classList.add('ativa');
+        }
     }
-}
-
-tecla.onkeyup = function () {
-    tecla.classList.remove('ativa');
+    
+    tecla.onkeyup = function () {
+        tecla.classList.remove('ativa');
+    }
 }
