@@ -1,4 +1,4 @@
-# Cursos Javascript Backen e Frontend
+# Cursos Javascript Backend e Frontend
 
 Os roteiros dos cursos e seus conteúdos estão listados conforme commits
 
