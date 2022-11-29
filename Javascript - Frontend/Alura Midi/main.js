@@ -20,11 +20,11 @@ for (let i = 0; i < keysList.length; i++) {
 
     key.onkeydown = function (event) {
         if (event.code === 'Enter' || event.code === 'Space') {
-            tecla.classList.add('ativa');
+            key.classList.add('ativa');
         }
     }
     
     key.onkeyup = function () {
-        tecla.classList.remove('ativa');
+        key.classList.remove('ativa');
     }
 }
