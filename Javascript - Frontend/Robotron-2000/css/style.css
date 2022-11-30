@@ -145,7 +145,8 @@ main {
 
 .producao:hover {
     background: var(--main-preto);
-    color: var(--main-branco)
+    color: var(--main-branco);
+    transition: 0.5s;
 }
 
 
