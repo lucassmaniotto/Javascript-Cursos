@@ -42,3 +42,6 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Funções e Listas;
     + Textos dinâmicos e Funções anônimas;
     + Eventos e Lógicas;
+* Manipulação do DOM
+    + Manipulando elementos com JS;
+    + Cálculo dinâmico;
