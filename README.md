@@ -47,3 +47,4 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Cálculo dinâmico;
 * Armazenamento de dados
     + Manipulando dados de formulário e criando elementos;
+    + Salvando informações no LocalStorage;
