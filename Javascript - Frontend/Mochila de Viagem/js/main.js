@@ -1,8 +1,15 @@
 const form = document.querySelector('#novoItem')
+const list = document.querySelector('#lista');
+const itens = [];
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    createElement(event.target.elements['nome'].value, event.target.elements['quantidade'].value);
+
+    const name = event.target.elements['nome'].value,
+          quantity = event.target.elements['quantidade'].value;
+
+    createElement(name, quantity);
+    event.target.reset();
 });
 
 function createElement(name, quantity){
@@ -14,6 +21,14 @@ function createElement(name, quantity){
     newItem.appendChild(itemNumber);
     newItem.innerHTML += name;
 
-    const list = document.getElementById('lista');
     list.appendChild(newItem);
+
+    const currentItems = {
+        "name": name,
+        "quantity": quantity
+    }
+
+    itens.push(currentItems);
+
+    localStorage.setItem('item', JSON.stringify(itens));
 }
