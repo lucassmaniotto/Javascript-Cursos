@@ -45,3 +45,5 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
 * Manipulação do DOM
     + Manipulando elementos com JS;
     + Cálculo dinâmico;
+* Armazenamento de dados
+    + Manipulando dados de formulário e criando elementos;
