@@ -12,9 +12,14 @@ function createElement(item){
 
     const itemNumber = document.createElement('strong');
     itemNumber.innerHTML = item.quantity;
+    itemNumber.dataset.id = item.id;
     newItem.appendChild(itemNumber);
     newItem.innerHTML += item.name;
     list.appendChild(newItem);
+}
+
+function updateItem(item){
+    document.querySelector(`[data-id="${item.id}"]`).innerHTML = item.quantity;
 }
 
 form.addEventListener('submit', (event) => {
@@ -26,9 +31,19 @@ form.addEventListener('submit', (event) => {
         "name": name.value,
         "quantity": quantity.value
     }
+    const existItem = itens.find((item) => item.name === name.value);
 
-    createElement(currentItem);
-    itens.push(currentItem);
+    if(existItem) {
+        currentItem.id = existItem.id;
+        updateItem(currentItem);
+        itens[existItem.id] = currentItem;
+    }
+    else {
+        currentItem.id = itens.length;
+        createElement(currentItem);
+        itens.push(currentItem);
+    }
+
     localStorage.setItem('itens', JSON.stringify(itens));
 
     event.target.reset();
