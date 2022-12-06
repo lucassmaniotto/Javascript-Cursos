@@ -15,6 +15,7 @@ function createElement(item){
     itemNumber.dataset.id = item.id;
     newItem.appendChild(itemNumber);
     newItem.innerHTML += item.name;
+    newItem.appendChild(buttonDelete(item.id));
     list.appendChild(newItem);
 }
 
@@ -22,6 +23,25 @@ function updateItem(item){
     document.querySelector(`[data-id="${item.id}"]`).innerHTML = item.quantity;
 }
 
+function buttonDelete(id) {
+    const button = document.createElement('button');
+    button.innerHTML = 'X';
+    button.classList.add('delete');
+
+    button.addEventListener('click', function() {
+        deleteElement(this.parentNode, id); 
+    });
+
+    return button;
+}
+
+function deleteElement(item, id){
+    item.remove();
+    itens.splice(itens.findIndex((item) => item.id === id), 1);
+    localStorage.setItem('itens', JSON.stringify(itens));
+}
+
+//main
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -36,10 +56,10 @@ form.addEventListener('submit', (event) => {
     if(existItem) {
         currentItem.id = existItem.id;
         updateItem(currentItem);
-        itens[existItem.id] = currentItem;
+        itens.find((item) => item.id === existItem.id) = currentItem;
     }
     else {
-        currentItem.id = itens.length;
+        currentItem.id = itens[itens.length - 1] ? itens[itens.length - 1].id + 1 : 0;
         createElement(currentItem);
         itens.push(currentItem);
     }
