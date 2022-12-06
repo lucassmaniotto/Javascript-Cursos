@@ -49,3 +49,4 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Manipulando dados de formulário e criando elementos;
     + Salvando informações no LocalStorage;
     + Buscando e interagindo com informações do LocalStorage;
+    + Atualizando dados do LocalStorage;
