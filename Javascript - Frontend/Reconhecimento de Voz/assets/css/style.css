@@ -79,3 +79,26 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0 2rem var(--tertiary-color);
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .message {
+        font-size: 1.5rem;
+    }
+    #play-again {
+        font-size: 1.25rem;
+    }
+    .box {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+}
