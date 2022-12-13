@@ -8,6 +8,7 @@ const maxValueElement = document.querySelector('#max-value');
 maxValueElement.innerHTML = maxValue;
 
 const secretNumber = drawNumber();
+console.log(secretNumber);
 
 function drawNumber() {
     return parseInt(Math.random() * maxValue + 1);

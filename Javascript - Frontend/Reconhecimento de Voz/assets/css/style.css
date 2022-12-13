@@ -43,6 +43,32 @@ body {
     margin-top: 3rem;
 }
 
+.text-shadow {
+    text-shadow: 0 0 10px var(--white-color);
+}
+
+.icon {
+    margin: 0 0.5rem;
+}
+
+#play-again {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#play-again:hover {
+    background-color: var(--white-color);
+    color: var(--tertiary-color);
+}
+
 .box {
     display: inline-block;
     background-color: var(--primary-color);
