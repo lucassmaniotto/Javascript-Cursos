@@ -41,16 +41,20 @@ function verifyValidGuess(guess) {
 
     if (number === secretNumber) {
         document.body.innerHTML = `
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
             <h2 class="title">Você acertou!</h2>
             <h3 class="subtitle text-shadow">O número era ${secretNumber}</h3>
             <button class="play-again" id="play-again">Jogar novamente</button>
+            
         `;
     }
     else if (number > secretNumber) {
-        guessElement.innerHTML += `<div class="message-text">O número secreto é menor que ${number} <i class="fa-solid fa-down-long icon"></i></div>`;
+        guessElement.innerHTML += `<div class="message-text">O número secreto é menor que ${number} <i class="fa-solid fa-down-long icon text-shadow"></i></div>`;
     }
     else {
-        guessElement.innerHTML += `<div class="message-text">O número secreto é maior que ${number} <i class="fa-solid fa-up-long icon"></i></div>`;
+        guessElement.innerHTML += `<div class="message-text">O número secreto é maior que ${number} <i class="fa-solid fa-up-long icon text-shadow"></i></div>`;
     }
 }
 
