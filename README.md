@@ -51,3 +51,5 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Buscando e interagindo com informações do LocalStorage;
     + Atualizando dados do LocalStorage;
     + Removendo dados do LocalStorage;
+* Reconhecimento de Voz
+    + Reconhecimento de voz com Web Speech API;
