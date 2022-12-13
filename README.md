@@ -53,3 +53,4 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Removendo dados do LocalStorage;
 * Reconhecimento de Voz
     + Reconhecimento de voz com Web Speech API;
+    + Manipulando dados de voz;
