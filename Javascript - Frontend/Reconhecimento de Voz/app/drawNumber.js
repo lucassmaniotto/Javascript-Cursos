@@ -12,4 +12,3 @@ const secretNumber = drawNumber();
 function drawNumber() {
     return parseInt(Math.random() * maxValue + 1);
 }
-
