@@ -54,3 +54,6 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
 * Reconhecimento de Voz
     + Reconhecimento de voz com Web Speech API;
     + Manipulando dados de voz;
+* Consumo e tratamento de API
+    + Consumindo da API ViaCEP com Fetch;
+    + Promises, async/await e tratamento de erros;
