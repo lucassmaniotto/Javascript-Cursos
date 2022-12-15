@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon" />
+        <title>Dungeons & Comics</title>
+    </head>
+    <body class="register__background">
+        <header class="header">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__button">
+                <label for="menu" class="container__label">
+                    <span class="header__menu-hamburguer container__img"></span>
+                </label>
+                <ul class="menu-list">
+                    <li class="menu-list__title">Categorias</li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">HQ's</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Mangas</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Livros de RPG</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Suplementos de RPG</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Artbooks</a>
+                    </li>
+                </ul>
+                <a href="index.html" class="container">
+                    <img src="assets/img/logo.svg" alt="Logo da D&C">
+                    <h1 class="container__title">Dungeons <b class="container__title--bold">&</b> Comics</h1>
+                </a>
+            </div>
+            <ul class="options">
+                <input type="checkbox" id="options-menu" class="options__button">
+                <label for="options-menu" class="options__label">
+                    <li class="options__item options__item-dropdown">Categorias</li>
+                </label>
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">HQ's</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Mangas</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Livros de RPG</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Suplementos de RPG</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">Artbooks</a>
+                    </li>
+                </ul>
+                <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
+                <li class="options__item"><a href="#" class="options__link">Minha estante</a></li>
+            </ul>
+            <div class="container">
+                <a href="#">
+                    <img src="assets/img/favorites.svg" alt="Meus favoritos" class="container__img container__img-transparent">
+                </a>
+                <a href="#" class="container__link">
+                    <img src="assets/img/purchases.svg" alt="Carrinho de compras" class="container__img">
+                    <p class="container__text">Minha sacola</p>
+                </a>
+                <a href="register.html" class="container__link">
+                    <img src="assets/img/user.svg" alt="Meu perfil" class="container__img">
+                    <p class="container__text">Meu perfil</p>
+                </a>
+            </div>
+        </header>
+        <section class="banner">
+            <h2 class="banner__title">Tela de cadastro</h2>
+        </section>
+        <main class="main-register">
+            <h2 class="form__title">Dados de cadastro</h2>
+            <form class="form" id="form" target="_blank" onsubmit="location.replace('./submited-register.html')">
+                <h3 class="form__subtitle">Dados pessoais</h3>
+                <div class="form__camp">
+                    <label for="name" class="label__camp">Nome Completo</label>
+                    <input type="text" name="name" id="name" class="write__camp" required>
+                </div>
+                <div class="form__pair">
+                    <div class="form__camp">
+                        <label for="birth" class="label__camp">Nascimento</label>
+                        <input type="date" name="birth" id="birth" class="write__camp" required>
+                    </div>
+                    <div class="form__camp">
+                        <label for="contact" class="label__camp">Contato</label>
+                        <input type="text" name="contact" id="contact" class="write__camp" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                </div>
+                <div class="form__camp">
+                    <label for="email" class="label__camp">E-mail</label>
+                    <input type="email" name="email" id="email" class="write__camp" required>
+                </div>
+                <h3 class="form__subtitle">Endereço</h3>
+                <div class="form__camp">
+                    <label for="cep" class="label__camp">CEP</label>
+                    <input type="text" name="cep" id="cep" class="write__camp" required>
+                    <div id="error"></div>
+                </div>
+                <div class="form__camp">
+                    <label for="address" class="label__camp">Endereço</label>
+                    <input type="text" name="address" id="address" class="write__camp" required>
+                </div>
+                <div class="form__pair">
+                    <div class="form__camp">
+                        <label for="birth" class="label__camp">Número</label>
+                        <input type="number" name="birth" id="birth" class="write__camp" required>
+                    </div>
+                    <div class="form__camp">
+                        <label for="complement" class="label__camp">Complemento</label>
+                        <input type="text" name="complement" id="complement" class="write__camp">
+                    </div>
+                </div>
+                <div class="form__camp">
+                    <label for="district" class="label__camp">Bairro</label>
+                    <input type="text" name="district" id="district" class="write__camp" required>
+                </div>
+                <div class="form__pair">
+                    <div class="form__camp">
+                        <label for="city" class="label__camp">Cidade</label>
+                        <input type="text" name="city" id="city" class="write__camp" required>
+                    </div>
+                    <div class="form__camp">
+                        <label for="state" class="label__camp">UF</label>
+                        <select id="state" name="state" class="write__camp">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" class="form__button" id="send">
+            </form>
+        </main>
+        <hr>
+        <footer class="footer">
+            <h2 class="footer__title">Dungeons & Comics</h2>
+            <ul class="footer-list">
+                <li class="footer-list__title">Editoras</li>
+                <li class="footer-list__item">
+                    <img src="assets/img/wizard-of-the-coast.svg" alt="Wizards of the Coast Logo">
+                    <a href="#" class="footer-list__link">Wizards of the Coast</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/jambo.svg" alt="Jambô Logo">
+                    <a href="#" class="footer-list__link">Jambô</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list__title">Quadrinhos</li>
+                <li class="footer-list__item">
+                    <img src="assets/img/marvel.svg" alt="Marvel Logo">
+                    <a href="#" class="footer-list__link">Marvel</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/dc.svg" alt="DC Comics Logo">
+                    <a href="#" class="footer-list__link">DC Comics</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/dark-horse.svg" alt="Dark Horse Comics Logo">
+                    <a href="#" class="footer-list__link">Dark Horse Comics</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/oni.svg" alt="Oni Press Logo">
+                    <a href="#" class="footer-list__link">Oni Press</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/boom.svg" alt="BOOM! Studios Logo">
+                    <a href="#" class="footer-list__link">BOOM! Studios</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/idw.svg" alt="IDW Publishing Logo">
+                    <a href="#" class="footer-list__link">IDW Publishing</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/arcaia.svg" alt="Archaia Logo">
+                    <a href="#" class="footer-list__link">Archaia</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list__title">Comunidade</li>
+                <li class="footer-list__item">
+                    <img src="assets/img/critical-role.svg" alt="Critical Role Logo">
+                    <a href="#" class="footer-list__link">Critical Role</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/skyfall.svg" alt="Skyfall RPG Logo">
+                    <a href="#" class="footer-list__link">Skyfall RPG</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/order-wiki.svg" alt="Ordem Paranormal Wiki Logo">
+                    <a href="#" class="footer-list__link">Ordem Paranormal Wiki</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/twitch.svg" alt="Twitch Logo">
+                    <a href="#" class="footer-list__link">Twitch</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/polygon.svg" alt="Polygon Logo">
+                    <a href="#" class="footer-list__link">Polygon</a>
+                </li>
+                <li class="footer-list__item">
+                    <img src="assets/img/casa-velha-rpg.svg" alt="Casa Velha RPG Logo">
+                    <a href="#" class="footer-list__link">Casa Velha RPG</a>
+                </li>
+            </ul>
+        </footer>
+        <script src="app/script.js"></script>
+    </body>
+</html>
