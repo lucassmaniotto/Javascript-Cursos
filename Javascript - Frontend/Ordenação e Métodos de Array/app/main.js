@@ -8,25 +8,8 @@ getSearchBooksAPI();
 async function getSearchBooksAPI() {
   const response = await fetch(endpointAPI);
   books = await response.json();
-  console.table(books);
-  renderBooks();
+  //console.table(books);
+  books = applyDiscount(books);
+  renderBooks(booksWithDiscount);
 }
 
-function renderBooks() {
-  elementForInsertBooks.innerHTML = '';
-  books.forEach(book => {
-    elementForInsertBooks.innerHTML += `
-      <div class="livro">
-          <img class="livro__imagens" src="${book.imagem}" alt="${book.alt}" />
-          <h2 class="livro__titulo">
-            ${book.titulo}
-          </h2>
-          <p class="livro__descricao">${book.autor}</p>
-          <p class="livro__preco" id="preco">R$${book.preco}0</p>
-          <div class="tags">
-            <span class="tag">${book.categoria}</span>
-          </div>
-      </div>
-    `
-  });
-}
