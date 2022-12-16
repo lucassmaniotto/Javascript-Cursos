@@ -57,3 +57,5 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
 * Consumo e tratamento de API
     + Consumindo da API ViaCEP com Fetch;
     + Promises, async/await e tratamento de erros;
+* Métodos de Arrays e Ordenação
+    + Métodos de Arrays com DOM;
