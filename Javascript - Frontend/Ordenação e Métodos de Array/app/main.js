@@ -8,7 +8,6 @@ getSearchBooksAPI();
 async function getSearchBooksAPI() {
   const response = await fetch(endpointAPI);
   books = await response.json();
-  //console.table(books);
   books = applyDiscount(books);
   renderBooks(booksWithDiscount);
 }
