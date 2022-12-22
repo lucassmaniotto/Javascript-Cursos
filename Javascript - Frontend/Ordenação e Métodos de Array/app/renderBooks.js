@@ -1,4 +1,8 @@
+const elementForInsertBooks = document.querySelector('#livros');
+const elementWithTotalValueOfAvailableBooks = document.querySelector('#valor_total_livros_disponiveis');
+
 function renderBooks(booksWithDiscount) {
+    elementWithTotalValueOfAvailableBooks.innerHTML = '';
     elementForInsertBooks.innerHTML = '';
     booksWithDiscount.forEach(book => {
         let avalaible = book.quantidade > 0 ? 'livro__imagem' : 'livro__imagem indisponivel';

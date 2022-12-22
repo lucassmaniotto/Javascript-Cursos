@@ -1,8 +1,6 @@
 let books = [];
 const endpointAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 
-const elementForInsertBooks = document.querySelector('#livros');
-
 getSearchBooksAPI();
 
 async function getSearchBooksAPI() {
