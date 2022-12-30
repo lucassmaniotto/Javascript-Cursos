@@ -59,3 +59,4 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Promises, async/await e tratamento de erros;
 * Métodos de Arrays e Ordenação
     + Métodos de Arrays com DOM;
+* Validação de formulários
