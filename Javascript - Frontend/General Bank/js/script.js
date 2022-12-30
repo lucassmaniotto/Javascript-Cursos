@@ -1,4 +1,5 @@
 import isCpf from "./validateCpf.js";
+import isOverAge from "./validateAge.js";
 
 const formFields = document.querySelectorAll('[required]');
 
@@ -11,8 +12,15 @@ function verifyField(field) {
         isCpf(field);
         field.value = formatCpf(field.value);
     }
+    if (field.name == "aniversario" && field.value != '') {
+        isOverAge(field);
+    }
 }
 
 function formatCpf(cpf) {
-    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+    cpf = cpf.replace(/\D/g, "");
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d{1,2})/, "$1-$2");
+    return cpf;
 }
