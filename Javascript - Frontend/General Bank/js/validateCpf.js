@@ -1,9 +1,9 @@
 export default function isCpf(field) {
     const cpf = field.value.replace(/\.|-/g, "");
     if (validateRepitedNumbers(cpf) || validateFirstDigit(cpf) || validateSecondDigit(cpf)) {
-        console.log(false)
+        field.setCustomValidity("O CPF digitado não existe.");
     } else {
-        console.log(true)
+        field.setCustomValidity("");
     }
 }
 

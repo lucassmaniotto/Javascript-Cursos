@@ -1,6 +1,8 @@
 export default function isOverAge(field) {
     const birth = new Date(field.value);
-    console.log(validateAge(birth));
+    if(!validateAge(birth)) {
+        field.setCustomValidity("Você deve ser maior que 18 anos para se cadastrar.");
+    }
 }
 
 function validateAge(date) {

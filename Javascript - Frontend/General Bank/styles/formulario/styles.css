@@ -99,6 +99,13 @@
     color: var(--branco);
 }
 
+.formulario__botao:hover{
+    background: var(--azul-escuro);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
 .formulario__imagem {
     display: block;
     margin: 2em auto;
@@ -126,7 +133,16 @@
 }
 
 .mensagem-erro {
+    display: flex;
+    align-items: center;
     color: red;
+    margin-top: 5px;
+}
+
+.mensagem-erro img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
 }
 
 .campo__escrita--erro {
