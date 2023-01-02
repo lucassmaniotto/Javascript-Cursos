@@ -62,3 +62,4 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
 * Validação de formulários
     + Validação de formulário com HTML e JS;
     + ValidityState e Custom Validity;
+    + Captura e persistência de imagens com getUserMedia;
