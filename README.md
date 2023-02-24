@@ -63,3 +63,13 @@ Curso de Formação: https://cursos.alura.com.br/formacao-javascript-front-end
     + Validação de formulário com HTML e JS;
     + ValidityState e Custom Validity;
     + Captura e persistência de imagens com getUserMedia;
+
+### Javascript e Typescript do básico ao avançado - Udemy / Luiz Otávio Miranda
+Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/
+* JavaScript Básico
+  + Console.log;
+  + Variáveis e Constantes;
+  + Dados Primitivos;
+  + Operadores Aritméticos;
+  + alert, prompt e confirm;
+  + Arrays, Objetos e Funções;
