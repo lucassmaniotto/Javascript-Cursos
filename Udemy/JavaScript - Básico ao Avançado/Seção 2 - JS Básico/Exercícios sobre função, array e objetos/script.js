@@ -27,33 +27,34 @@ function handleSubmit(event) {
         person.classification = 'Obesidade II';
     }
     people.push(person);
-
-    updateTable();
 }
 
 function createPerson(){
     const nameInput = document.querySelector('#name').value;
     const surnameInput = document.querySelector('#surname').value;
-    const weightInput = document.querySelector('#weight').value.replace(',', '.');
-    const heightInput = document.querySelector('#height').value.replace(',', '.');
+    const weightInput = parseFloat(document.querySelector('#weight').value.replace(',', '.'));
+    const heightInput = parseFloat(document.querySelector('#height').value.replace(',', '.'));
 
     const person = {
         name: nameInput,
         surname: surnameInput,
-        weight: parseFloat(weightInput),
-        height: parseFloat(heightInput),
+        weight: weightInput,
+        height: heightInput,
         classification: '',
 
         calcIMC() {
             return this.weight / (this.height * this.height);
         }
     }
+    
 
-    return person;
+    if (inputTreatment(nameInput, surnameInput, weightInput, heightInput)) {
+        return person;
+    }
 }
 
 function updateTable(){
-    let table = document.querySelector('#table');
+    let table = document.querySelector('#table__body');
     table.innerHTML = ` `;
 
     people.forEach(person => {
@@ -68,4 +69,19 @@ function updateTable(){
             </tr>
         `;
     });
+}
+
+function inputTreatment(name, surname, weight, height){
+    if (name === '' || surname === '' || weight === '' || height === '') {
+        div.innerHTML = `<p class="message">Preencha todos os campos.</p>`;
+        return false;
+    } else if (weight <= 0 || height <= 0) {
+        div.innerHTML = `<p class="message">Preencha os campos corretamente.</p>`;
+        return false;
+    } else if (isNaN(weight) || isNaN(height)) {
+        div.innerHTML = `<p class="message">Preencha os campos com números.</p>`;
+        return false;
+    } else {
+        return true;
+    }
 }
