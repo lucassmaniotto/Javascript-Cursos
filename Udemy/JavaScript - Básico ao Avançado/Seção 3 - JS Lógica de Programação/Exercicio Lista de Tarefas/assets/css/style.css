@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --error-color: rgb(185, 14, 14);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1em;
+  transition: all 0.2s;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input{
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid var(--primary-color-darker);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+button{
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid var(--primary-color-darker);
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  background: var(--primary-color-darker);
+}
+
+button:active{
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  border-bottom: none;
+}

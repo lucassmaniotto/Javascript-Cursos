@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --red: rgb(185, 14, 14);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 3em;
+  padding: 0 0 10px 0;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.buttons button{
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid var(--primary-color-darker);
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover{
+  background: var(--primary-color-darker);
+}
+
+.buttons button:active{
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.red{
+  color: var(--red);
+}

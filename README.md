@@ -73,3 +73,13 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Operadores Aritméticos;
   + alert, prompt e confirm;
   + Arrays, Objetos e Funções;
+* Lógica de programação
+  + Operadores Lógicos e de Comparação;
+  + Estruturas Condicionais;
+  + Operadores Ternários;
+  + Object Date;
+  + Switch Case;
+  + Destruturing;
+  + Laços de repetição;
+  + Tratamento e lançamento de erros;
+  + SetTimeout e SetInterval;
