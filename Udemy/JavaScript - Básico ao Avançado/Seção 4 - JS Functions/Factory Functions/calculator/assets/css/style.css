@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 2em;
+  pointer-events: none;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 5px solid var(--primary-color-darker);
+  border-radius: 5px;
+  margin: 5px 2px;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: all 0.2s;
+}
+
+button:hover{
+  background: var(--primary-color-darker);
+}
+
+button:active{
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  border-bottom: none;
+}

@@ -83,3 +83,10 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Laços de repetição;
   + Tratamento e lançamento de erros;
   + SetTimeout e SetInterval;
+* JavaScript Avançado
+  + Callbacks;
+  + IIFE;
+  + Factory Functions;
+  + Constructor Functions;
+  + Recursividade;
+  + Funções Geradoras;
