@@ -90,3 +90,10 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Constructor Functions;
   + Recursividade;
   + Funções Geradoras;
+  + Métodos de Arrays;
+    + Splice;
+    + Concat e Spread Operator;
+    + Filter;
+    + Map;
+    + Reduce;
+    + forEach;
