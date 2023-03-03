@@ -97,3 +97,9 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
     + Map;
     + Reduce;
     + forEach;
+  + Objetos e Prototypes;
+    + Object.defineProperty e Object.defineProperties;
+    + Getter e Setter;
+    + Métodos
+    + Herança;
+    + Polimorfismo; 
