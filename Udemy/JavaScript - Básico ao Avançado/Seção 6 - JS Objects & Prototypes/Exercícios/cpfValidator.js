@@ -1,7 +1,8 @@
 /* ----------------- Função construtora ----------------- */
-function ValidateCpf(cpf) {
-    this.cpf = cpf;
-    let cpfClean = cpf.replace(/\D/g, '')
+function ValidateCpf(cpfData) {
+    this.cpf = cpfData;
+    
+    let cpfClean = typeof this.cpf === 'string' ? this.cpf.replace(/\D/g, '') : this.cpf.toString();
     let cpfArray = cpfClean.split('').map(Number);
     
     this.validate = () => {
@@ -63,7 +64,8 @@ const obj = [
     cpf2 = new ValidateCpf('123.456.789-10'),
     cpf3 = new ValidateCpf('11111111111'),
     cpf4 = new ValidateCpf('028.444.444-44'),
-    cpf5 = new ValidateCpf('028.444.44')
+    cpf5 = new ValidateCpf('028.444.44'),
+    cpf6 = new ValidateCpf(12345678910)
 ]
 
 obj.forEach(cpf => {

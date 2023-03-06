@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aula 107</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulário de Cadastro</h1>
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só poderá conter letras e/ou números</li>
+      <li>Usuário deverá ter entre 3 à 12 caracteres</li>
+      <li>Senha deve ter entre 6 à 12 caracteres</li>
+    </ul>
+
+    <form action="" method="post" id="form">
+      <label for="name">Nome:</label>
+      <input type="text" name="name" class="validate name">
+
+      <label for="surname">Sobrenome:</label>
+      <input type="text" name="surname" class="validate surname" >
+
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" class="validate cpf">
+
+      <label for="username">Usuário:</label>
+      <input type="text" name="username" class="validate username">
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" class="validate password" id="password">
+
+      <label for="confirmPassword">Confirmar Senha:</label>
+      <input type="password" name="confirmPassword" class="validate confirmPassword">
+
+      <button type="submit">Enviar</button>
+  </section>
+
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+
+</html>
