@@ -107,3 +107,9 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Classes;
   + Herança;
   + Métodos estáticos;
+* JavaScript Assíncrono
+  + Promises;
+  + Métodos para Promises;
+  + Async/Await;
+  + XMLHttpRequest;
+  + Fetch API e Axios;
