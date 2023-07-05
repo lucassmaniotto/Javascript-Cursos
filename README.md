@@ -118,3 +118,4 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Métodos de String;
   + Quantificadores;
   + Greedy e Non-greedy;
+  + Conjuntos e Ranges;

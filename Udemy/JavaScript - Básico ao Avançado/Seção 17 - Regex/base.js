@@ -37,8 +37,11 @@ const files = [
 
 const html = '<p>Hello</p> <p>World</p> <div>Sou a div</div> <span>Sou a span</span>'
 
+const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ©'
+
 module.exports = {
     text, 
     files,
-    html
+    html,
+    alfabeto
 }
