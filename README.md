@@ -113,3 +113,5 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Async/Await;
   + XMLHttpRequest;
   + Fetch API e Axios;
+* Regular Expression
+  + Métodos de RegExp;
