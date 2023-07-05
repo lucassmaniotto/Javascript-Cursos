@@ -115,3 +115,4 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Fetch API e Axios;
 * Regular Expression
   + Métodos de RegExp;
+  + Métodos de String;
