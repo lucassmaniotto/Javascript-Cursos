@@ -35,7 +35,10 @@ const files = [
     'image.jpeg'
 ]
 
+const html = '<p>Hello</p> <p>World</p> <div>Sou a div</div> <span>Sou a span</span>'
+
 module.exports = {
     text, 
-    files
+    files,
+    html
 }

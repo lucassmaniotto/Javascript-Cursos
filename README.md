@@ -117,3 +117,4 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Métodos de RegExp;
   + Métodos de String;
   + Quantificadores;
+  + Greedy e Non-greedy;
