@@ -19,8 +19,23 @@ aboard her starship, custodian of
 the stolen plans that can save her
 people and restore freedom to the
 galaxy...
+
+Loo
 `
 
+const files = [
+    'app.js',
+    'app.scss',
+    'app.html',
+    'index.html',
+    'styles.scss',
+    'scripts.js',
+    'image.png',
+    'imagem.jpg',
+    'image.jpeg'
+]
+
 module.exports = {
-    text
+    text, 
+    files
 }
