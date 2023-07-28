@@ -119,3 +119,7 @@ Curso de Formação: https://www.udemy.com/course/curso-de-javascript-moderno-do
   + Quantificadores;
   + Greedy e Non-greedy;
   + Conjuntos e Ranges;
+  + Começo e fim da string;
+  + Retrovisores;
+  + Lookahead e Lookbehind;
+  + Receitas;

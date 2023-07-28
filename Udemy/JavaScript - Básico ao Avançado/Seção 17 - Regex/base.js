@@ -19,29 +19,63 @@ aboard her starship, custodian of
 the stolen plans that can save her
 people and restore freedom to the
 galaxy...
-
-Loo
-`
+`;
 
 const files = [
-    'app.js',
-    'app.scss',
-    'app.html',
-    'index.html',
-    'styles.scss',
-    'scripts.js',
-    'image.png',
-    'imagem.jpg',
-    'image.jpeg'
-]
+  "app.js",
+  "app.scss",
+  "app.html",
+  "index.html",
+  "styles.scss",
+  "scripts.js",
+  "image.png",
+  "imagem.jpg",
+  "image.jpeg",
+];
 
-const html = '<p>Hello</p> <p>World</p> <div>Sou a div</div> <span>Sou a span</span>'
+const cpfs = `
+Os CPFs são:
+    254.224.877-45 215.978.456-12 047.258.369-96
+    963.987.321-00
+    963.987.32a.00 (NÃO VÁLIDO)
+    963.987.32-00 (NÃO VÁLIDO)
+`;
 
-const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ©'
+const ips = `
+Os Ips são:
+    0.0.0.0
+    
+    192.168.0.25
+
+        10.10.5.12
+    
+    255.255.255.255
+`;
+
+const html =
+  "<p>Hello</p> <p>World</p> <div>Sou a div</div> <span>Sou a span</span>";
+
+const html2 = `<p>Olá mundo</p> <p class="teste" data-teste='teste'>Sou um p</p> <div>Sou a div</div>`;
+
+const alfabeto =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ©";
+
+const lookahead = `
+ONLINE 192.168.0.1 ABCDEF inactive
+OFFLINE 192.168.0.2 ABCDEF active
+ONLINE 192.168.0.3 ABCDEF active
+ONLINE 192.168.0.4 ABCDEF active
+OFFLINE 192.168.0.5 ABCDEF active
+OFFLINE 192.168.0.6 ABCDEF inactive
+`;
 
 module.exports = {
-    text, 
-    files,
-    html,
-    alfabeto
-}
+  text,
+  files,
+  html,
+  alfabeto,
+  cpfs,
+  ips,
+  html2,
+  lookahead
+};
